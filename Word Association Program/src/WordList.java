@@ -14,6 +14,7 @@ public class WordList {
     public WordList(String word) {
         head = new WordNode(word);
         tail = head;
+        length = 1;
     }
 
     /* Setters */
@@ -68,7 +69,7 @@ public class WordList {
      * be outputted to a txt file.
      */
     public String toString() {
-        String output = "WAP Results:\n\n";
+        String output = "";
 
         WordNode curr = head;
         while (curr != null) {
