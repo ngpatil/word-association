@@ -15,43 +15,50 @@ public class App {
         JOptionPane.showMessageDialog(null, "Welcome to the Word Assocation Program!", "WAP",
                 JOptionPane.INFORMATION_MESSAGE);
 
+        // used to create a unique filename
         String name = JOptionPane.showInputDialog(null, "Enter your last name:", "WAP",
                 JOptionPane.INFORMATION_MESSAGE);
 
-        Integer[] options = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        int timeLimit = (Integer) JOptionPane.showInputDialog(null, "Pick a time limit (mins):", "Time Limit",
-                JOptionPane.QUESTION_MESSAGE, null, options, options[2]);
+        Integer[] ops = {1, 2};
+        int choice = (Integer) JOptionPane.showInputDialog(null, "Choose the group code specified by the administrator::", "Group Code", JOptionPane.QUESTION_MESSAGE, null, ops, ops[0]);
 
-        JOptionPane.showMessageDialog(null,
-                "Enter the first word that comes to your mind.\n            Continue until time runs out.", "WAP",
+        // these are some default options, subject to change
+        Integer[] options = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+        int wordLimit = (Integer) JOptionPane.showInputDialog(null, "Pick a word limit:", "Word Limit",
+                JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+
+        JOptionPane.showMessageDialog(null, "Enter the first word that comes to your mind.", "WAP",
                 JOptionPane.INFORMATION_MESSAGE);
 
+        // inputting the first word and creating the WordList
         String input = JOptionPane.showInputDialog(null, "Enter a starting word:", "WAP",
                 JOptionPane.INFORMATION_MESSAGE);
 
         WordList wList = new WordList(input);
 
+        // it is important that they always see the previous word
         String prev = input;
 
-        for (int i = 0; i < timeLimit - 1; i++) {
+        // read in the rest of the words
+        for (int i = 0; i < wordLimit - 1; i++) {
             input = JOptionPane.showInputDialog(null, prev, "WAP", JOptionPane.INFORMATION_MESSAGE);
             wList.addWord(input);
             prev = input;
         }
-        System.out.print("WAP Results for " + name + ":\n\n");
-        System.out.println(wList);
 
-        File file = new File(name + ".txt");
+        // writing to file
+        File file = new File(name + choice + "-" + wList.getLength() + ".txt");
         file.createNewFile();
         FileWriter writer = new FileWriter(file);
-        writer.write("WAP Results for " + name + ":\n\n");
+        writer.write("Group "+choice+ " WAP Results for " + name + ":\n\n");
         writer.write(wList.toString());
         writer.flush();
         writer.close();
 
+        // exit message
         JOptionPane.showMessageDialog(null,
-                "Your results have been saved to " + name + ".txt.\nThank you for participating!", "WAP",
-                JOptionPane.INFORMATION_MESSAGE);
+                "Your results have been saved to " + name + choice + "-" + wList.getLength() + ".txt.\nThank you for participating!",
+                "WAP", JOptionPane.INFORMATION_MESSAGE);
 
     }
 }

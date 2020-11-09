@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="WAP:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="67345dd3-c623-463c-82e1-bc95a011c80a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/word-association-program/Word Association Program/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/word-association-program/Word Association Program/src/App.java" afterDir="false" />
+    <list default="true" id="3a45d284-7df1-430c-a663-759272e0642c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Word Association Program/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Word Association Program/src/App.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +19,32 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\npati\Documents\Vandy\Senior Year\WAP\word-association-program\word-association-program\.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1k2lpFsUQi3GCBI3y6VoTsPM0HA" />
+  <component name="ProjectId" id="1k2mYNeT4yom6fVYkHgKs9SwJ05" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/word-association-program.jar" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\npati\Documents\Vandy\Senior Year\WAP\word-association-program\word-association-program\Word Association Program" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -37,17 +58,45 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="Word Association Program" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WAP Executable" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/word-association-program.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\npati\Documents\Vandy\Senior Year\WAP\word-association-program\word-association-program" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="App" run_configuration_type="Application" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/word-association-program.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\npati\Documents\Vandy\Senior Year\WAP\word-association-program\Word Association Program" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JAR Application.WAP Executable" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="67345dd3-c623-463c-82e1-bc95a011c80a" name="Default Changelist" comment="" />
-      <created>1604906747608</created>
+      <changelist id="3a45d284-7df1-430c-a663-759272e0642c" name="Default Changelist" comment="" />
+      <created>1604907106275</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604906747608</updated>
-      <workItem from="1604906749149" duration="80000" />
+      <updated>1604907106275</updated>
+      <workItem from="1604907110269" duration="1067000" />
+      <workItem from="1604908733824" duration="95000" />
     </task>
     <servers />
   </component>
@@ -59,7 +108,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
