@@ -68,16 +68,17 @@ public class WordList {
      * be outputted to a txt file.
      */
     public String toString() {
-        String output = "\tWAP Results:\n\n";
+        String output = "WAP Results:\n\n";
 
         WordNode curr = head;
         while (curr != null) {
             output += curr.getWord() + "\n";
+            curr = curr.getNext();
         }
 
         // word summaries
         output += "\n";
-        output += "Total words: " + output;
+        output += "Total words: " + length + "\n";
 
         return output;
 
