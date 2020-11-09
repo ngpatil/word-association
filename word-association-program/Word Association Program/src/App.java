@@ -50,7 +50,7 @@ public class App {
         File file = new File(name + choice + "-" + wList.getLength() + ".txt");
         file.createNewFile();
         FileWriter writer = new FileWriter(file);
-        writer.write("WAP Results for " + name + ":\n\n");
+        writer.write("Group "+choice+ " WAP Results for " + name + ":\n\n");
         writer.write(wList.toString());
         writer.flush();
         writer.close();
