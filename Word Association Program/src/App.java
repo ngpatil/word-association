@@ -6,6 +6,8 @@
 
 /* Imports */
 import javax.swing.JOptionPane;
+import java.io.File;
+import java.io.FileWriter;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -38,6 +40,14 @@ public class App {
         }
         System.out.print("WAP Results for " + name + ":\n\n");
         System.out.println(wList);
+
+        File file = new File(name + ".txt");
+        file.createNewFile();
+        FileWriter writer = new FileWriter(file);
+        writer.write("WAP Results for " + name + ":\n\n");
+        writer.write(wList.toString());
+        writer.flush();
+        writer.close();
 
         JOptionPane.showMessageDialog(null,
                 "Your results have been saved to " + name + ".txt.\nThank you for participating!", "WAP",
