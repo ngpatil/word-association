@@ -1,0 +1,14 @@
+WAP Results for test:
+
+d
+gd
+
+f
+d
+sd
+
+f
+
+f
+
+Total words: 10

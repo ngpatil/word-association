@@ -19,6 +19,9 @@ public class App {
         String name = JOptionPane.showInputDialog(null, "Enter your last name:", "WAP",
                 JOptionPane.INFORMATION_MESSAGE);
 
+        Integer[] ops = {1, 2};
+        int choice = (Integer) JOptionPane.showInputDialog(null, "Choose the group code specified by the administrator::", "Group Code", JOptionPane.QUESTION_MESSAGE, null, ops, ops[0]);
+
         // these are some default options, subject to change
         Integer[] options = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
         int wordLimit = (Integer) JOptionPane.showInputDialog(null, "Pick a word limit:", "Word Limit",
@@ -44,7 +47,7 @@ public class App {
         }
 
         // writing to file
-        File file = new File(name + wList.getLength() + ".txt");
+        File file = new File(name + choice + "-" + wList.getLength() + ".txt");
         file.createNewFile();
         FileWriter writer = new FileWriter(file);
         writer.write("WAP Results for " + name + ":\n\n");
@@ -54,7 +57,7 @@ public class App {
 
         // exit message
         JOptionPane.showMessageDialog(null,
-                "Your results have been saved to " + name + wList.getLength() + ".txt.\nThank you for participating!",
+                "Your results have been saved to " + name + choice + "-" + wList.getLength() + ".txt.\nThank you for participating!",
                 "WAP", JOptionPane.INFORMATION_MESSAGE);
 
     }

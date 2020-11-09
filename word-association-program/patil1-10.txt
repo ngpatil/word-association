@@ -1,0 +1,14 @@
+WAP Results for patil:
+
+truth
+false
+lies
+honest
+honesty
+honestly
+language
+casualties
+gradually
+applebee's
+
+Total words: 10
