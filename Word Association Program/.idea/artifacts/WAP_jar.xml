@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WAP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WAP_jar</output-path>
+    <root id="archive" name="Word Association Program.jar">
+      <element id="module-output" name="Word Association Program" />
+    </root>
+  </artifact>
+</component>
